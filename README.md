@@ -1,1 +1,3 @@
-# rest_api
+# REST API intro
+
+Study project workbook.
