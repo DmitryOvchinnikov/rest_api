@@ -81,6 +81,7 @@ images/**
 notes/**
 .vscode/**
 
-
 exp/
 bin/
+
+.env
