@@ -44,5 +44,5 @@ func main() {
 	r.HandleFunc("/books", c.UpdateBook()).Methods("POST")
 	r.HandleFunc("/books/{id}", c.RemoveBook()).Methods("DELETE")
 
-	log.Fatal(http.ListenAndServe(":8000", &controller.WithCORS{Router: r}))
+	log.Fatal(http.ListenAndServe(":18080", &controller.WithCORS{Router: r}))
 }

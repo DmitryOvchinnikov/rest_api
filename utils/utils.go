@@ -20,5 +20,8 @@ func SendError(w http.ResponseWriter, status int, error models.Error) {
 
 func SendSuccess(w http.ResponseWriter, data interface{}) {
 	fmt.Println(data)
-	json.NewEncoder(w).Encode(data)
+	err := json.NewEncoder(w).Encode(data)
+	if err != nil {
+		return
+	}
 }
